@@ -1,5 +1,5 @@
 fun main(){
-    val c = Car("BMW")
+    val c = Car("Mercedes Benz")
     println(c.model)
 }
 class Car(m: String){
