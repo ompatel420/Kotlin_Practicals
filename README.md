@@ -1,5 +1,10 @@
 # Practical 1: Kotlin Programming Concepts
 
+## AIM 
+Develop a Kotlin program for demonstrating various programming concepts.
+
+---
+
 ## 📌 Overview
 
 This practical demonstrates fundamental **Kotlin programming concepts** through a series of programs covering variables, type conversion, user input, control flow, functions, recursion, arrays, collections, classes, constructors, operator overloading, and matrix operations.
@@ -462,64 +467,6 @@ instead of calling a separate addition function.
 
 \---
 
-## Matrix Operations
-
-The `Matrix` class implements:
-
-### 1\. Matrix Addition
-
-```text
-C\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j] = A\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j] + B\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j]
-```
-
-### 2\. Matrix Subtraction
-
-```text
-C\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j] = A\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j] - B\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j]
-```
-
-### 3\. Matrix Multiplication
-
-```text
-C\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j] = Σ A\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[k] × B\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[k]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j]
-```
-
-### Example Structure
-
-```kotlin
-class Matrix(private val data: Array<IntArray>) {
-
-    operator fun plus(other: Matrix): Matrix {
-        val result = Array(data.size) { IntArray(data\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[0].size) }
-
-        for (i in data.indices) {
-            for (j in data\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[0].indices) {
-                result\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j] = data\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j] + other.data\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j]
-            }
-        }
-
-        return Matrix(result)
-    }
-
-    operator fun minus(other: Matrix): Matrix {
-        val result = Array(data.size) { IntArray(data\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[0].size) }
-
-        for (i in data.indices) {
-            for (j in data\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[0].indices) {
-                result\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j] = data\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j] - other.data\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[i]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[j]
-            }
-        }
-
-        return Matrix(result)
-    }
-
-    override fun toString(): String {
-        return data.joinToString("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n") {
-            it.joinToString(" ")
-        }
-    }
-}
-```
 
 ### Customized `toString()`
 
@@ -531,39 +478,6 @@ Example output:
 1 2 3
 4 5 6
 7 8 9
-```
-
-\---
-
-# 📂 Suggested Project Structure
-
-```text
-Practical-1/
-│
-├── README.md
-├── src/
-│   └── Main.kt
-│
-└── output/
-    └── practical-output.txt
-```
-
-Alternatively, each practical can be maintained as a separate Kotlin file:
-
-```text
-Practical-1/
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_DataTypes.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_TypeConversion.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_3\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_StudentInformation.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_4\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_OddEven.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_5\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_MonthName.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_6\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_UserDefinedFunction.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_7\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_FactorialRecursion.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_8\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_Arrays.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_9\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_ArrayListMaximum.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_10\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_CarClass.kt
-├── 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_11\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_MatrixOperatorOverloading.kt
-└── README.md
 ```
 
 \---
@@ -625,3 +539,7 @@ Practical 1 provides a foundation in **Kotlin programming and object-oriented pr
 
 By completing these programs, students gain practical experience in writing, executing, and understanding Kotlin programs.
 
+---
+
+**Enrollment No:** 24012011117  
+**Practical:** 01
